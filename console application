@@ -1,0 +1,311 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+
+
+
+namespace CSharpMidterm
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ////TODO SYSTEM NAMESPACE 
+
+            ////Contain fundamental classes that define commonly-used value
+            ////=======================================================================
+
+            ////TODO beep method
+
+            ////FUNCTION BEEP
+            ////PLAYS A SOUND THROUGH THE SPEAKERS
+
+            //Console.Beep();
+
+            ////Plays a sound through the speakers on a specified frequency and duration Console.Beep(int32, int32)
+            //Console.Beep(500, 500);
+            //Console.Beep(750, 100);
+            //Console.Beep(1000, 1);
+
+            //Console.WriteLine("How many beeps do you want to hear?");
+            //string beepNum = Console.ReadLine();
+            //int x;
+            //Int32.TryParse(beepNum, out x);
+            ////for statment comes with (initializer; condition; iterator)
+            ////below is the body for the statement 
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    Console.WriteLine("Beep number {0}.", i);
+            //    Console.Beep(500, 100);
+            //}
+
+
+            ////================================================================
+
+            /* TODO Method MATH.POW (raises a number to a particular exponent)
+            Provides constants and static methods for trignometric, logarthmic, and other 
+            common mathemarical functions.
+            hypotenuse - wrong */
+
+            //Console.WriteLine("lets find the hypotenuse! please press 'enter' to continue)");
+            //Console.ReadLine();
+            //Console.WriteLine("what is the length of the short side?");
+            //string sLength = Console.ReadLine();
+            //Console.WriteLine("what is the length of the long side?");
+            //string lLength = Console.ReadLine();
+            //double a, b;
+            //double.TryParse(sLength, out a);
+            //double.TryParse(lLength, out b);
+            //double aLength = Math.Pow(a, 2);
+            //double bLength = Math.Pow(b, 2);
+            //double cLength = (aLength + bLength);
+            //Console.WriteLine("Your hypotenuse is {0}", cLength);
+
+            ////================================================================
+
+            ////TODO Method MATH.SQRT (finds the square root of a number)
+            ////hypotenuse - correct
+
+            //Console.WriteLine("lets find the hypotenuse! please press 'enter' to continue)");
+            //Console.ReadLine();
+            //Console.WriteLine("what is the length of the short side?");
+            //string sLength = Console.ReadLine();
+            //Console.WriteLine("what is the length of the long side?");
+            //string lLength = Console.ReadLine();
+            //double a, b;
+            //double.TryParse(sLength, out a);
+            //double.TryParse(lLength, out b);
+            //double aLength = Math.Pow(a, 2);
+            //double bLength = Math.Pow(b, 2);
+            //double cLength = (aLength + bLength);
+            //double dLength = Math.Sqrt(cLength);
+            //Console.WriteLine("Your hypotenuse is {0}", cLength);
+            //Console.WriteLine("And also the square root of hypotenuse is:{0}", dLength);
+
+
+            ////==================================================================
+
+            ////TODO Method Math.Round(rounds a number to an integer by using normal rounding conventions)
+
+            //Console.WriteLine("Lets find the rounding number of each item Press 'enter' to begin");
+            //Console.WriteLine("enter a number between '0 AND 50.0'");
+            //double input = Convert.ToDouble(Console.ReadLine());
+            //Console.ReadLine();
+            //double q = Math.Round(input);
+            //Console.WriteLine("enter a number between '0 AND 50.0'");
+            //double input2 = Convert.ToDouble(Console.ReadLine());
+            //Console.ReadLine();
+            //double r = Math.Round(input2);
+            //Console.WriteLine("your rounded number for " + input + " is {0}", q);
+            //Console.WriteLine("your rounded number for " + input2 + " is {0}", r);
+
+            //Console.WriteLine("Press 'enter' to see the next set of roundings");
+            //Console.ReadLine();
+            //Console.WriteLine("enter a number between '0 AND 50.0'");
+            //double input3 = Convert.ToDouble(Console.ReadLine());
+            //Console.ReadLine();
+            //double s = Math.Round(input3);
+            //Console.WriteLine("enter a number between '0 AND 50.0'");
+            //double input4 = Convert.ToDouble(Console.ReadLine());
+            //Console.ReadLine();
+            //double t = Math.Round(input4);
+            //Console.WriteLine("your rounded number for " + input3 + " is {0}", s);
+            //Console.WriteLine("your rounded number for" + input4 + " is {0}", t);
+
+
+            ////===================================================================
+
+            ////TODO Method (array type mismatch exception)
+
+            ////the string siblings contain the following 
+
+            //string[] siblings = { "john", "jamie", "robert", "simon" };
+
+            ////transfer siblings to ojbect obj
+            //Object[] objs = (Object[])siblings;
+
+            //try
+            //{
+            //    //the foreach will go through each name in the objs string 
+            //    foreach (object name in objs)
+            //    {
+            //        //write out the items in name
+            //        Console.WriteLine(name);
+            //    }
+            //}
+            ////this exception called array type mismatch exception 
+            //catch (ArrayTypeMismatchException)
+            //{
+            //    Console.WriteLine("Exception Thrown");
+            //}
+
+            //try
+            //{
+            //    //the object that was thrown to catch the mismatch is '42'
+            //    Object obj = (Object)42;
+            //    objs[3] = obj;
+            //}
+            ////the exception will print out the statement below
+            //catch (ArrayTypeMismatchException)
+            //{
+            //    Console.WriteLine("Array Type Mismatch Exception: Incorrect Type Added");
+            //}
+
+
+
+
+
+            ////===================================================================
+            ////===================================================================
+
+            /* TODO System.Collection.Generics
+            allows users to create collections that provide better performance
+            methods contain enqueue / dequeue / peek / contains / clear
+            which adds / removes / peeks at the first item / checks for requested item / clears all 
+            within in a stack queue */
+
+            //Queue<string> Input = new Queue<string>();
+            //Console.WriteLine("Press 'enter' to show your first five items");
+            //Console.ReadLine();
+
+            ////======================================================================
+
+            ////TODO Enqueue method
+
+            //Input.Enqueue("one");
+            //Input.Enqueue("two");
+            //Input.Enqueue("three");
+            //Input.Enqueue("four");
+            //Input.Enqueue("five");
+            //Console.WriteLine("Total number of values in the Queue are: ");
+            //foreach (string value in Input)
+            //{
+            //    int count = 0;
+            //    count++;
+            //    Console.WriteLine(value);
+            //}
+            //Console.WriteLine("({0})", Input.Count);
+
+            ////======================================================================
+
+            ////TODO Dequeue method
+
+            //Console.WriteLine("\nDequeuing '{0}'", Input.Dequeue());
+            //Console.WriteLine("\nPeek at the next item to dequeue: '{0}'", Input.Peek());
+            //Console.WriteLine("\nDequeuing '{0}'\n", Input.Dequeue());
+
+            //Console.WriteLine("\nThe queue now contains");
+            //foreach (string value in Input)
+            //{
+            //    int count = 0;
+            //    count++;
+            //    Console.WriteLine(value);
+            //}
+
+            ////=======================================================================
+
+            ////TODO Contains method
+
+            //Console.WriteLine("\nQueue stack contains(\"five\") = {0}\n", Input.Contains("five"));
+
+            //=======================================================================
+
+            //TODO Clear method
+
+            //Console.WriteLine("Clear all values \nThe Queue now contains {0} values"); Input.Clear();
+
+
+
+
+
+            ////===================================================================
+            ////===================================================================
+
+            /* TODO System.IO
+            The System.IO namespace contains types that allow reading and writing to files and data streams, 
+            and types that provide basic file and directory support. */
+
+            ////TODO File Class
+
+            ////create file 
+
+            //Console.WriteLine("Let's create a file.");
+
+            //string path1 = @"C:\Users\Student2\source\repos\temp\MyTest1.txt";
+            //string path2 = @"C:\Users\Student2\source\repos\temp\MyTest2.txt";
+
+            ////delete file if it exist 
+            //if (File.Exists(path1))
+            //{
+            //    File.Delete(path1);
+            //}
+            //if (File.Exists(path2))
+            //{
+            //    File.Delete(path2);
+            //}
+
+            //using (FileStream fs1 = File.Create(path1))
+
+            //    Console.WriteLine("CSharp text1 created.");
+            //Console.ReadLine();
+
+            //using (FileStream fs2 = File.Create(path2))
+
+            //    Console.WriteLine("CSharp text2 created.");
+            //Console.ReadLine();
+
+            //////===================================================================================
+
+            ////TODO WriteAllText Method
+
+            //Console.WriteLine("write something for file 1");
+            //string text1 = Console.ReadLine();
+            //File.WriteAllText(path1, text1);
+
+            //Console.WriteLine("write something for file 2");
+            //string text2 = Console.ReadLine();
+            //File.WriteAllText(path2, text2);
+
+            //////===================================================================================
+
+            ////TODO Copy Method
+            //File.Copy(path1, path2, true);
+
+            //Console.WriteLine("CSharp text1 copied to CSharp text2");
+            //Console.ReadLine();
+
+            //////==================================================================================
+
+            ////TODO ReadAllText Method
+
+            //string contents1 = File.ReadAllText(path1);
+
+            //Console.WriteLine("CSharp text1 contains the following text: {0} ", contents1);
+            //Console.ReadLine();
+
+
+            //string contents2 = File.ReadAllText(path2);
+
+            //Console.WriteLine("CSharp text2 contains the following text: {0} ", contents2);
+            //Console.ReadLine();
+
+
+            //////=================================================================================  
+
+            ////TODO Delete Method
+            //File.Delete(path1);
+            //Console.WriteLine("CSharp text1 deleted");
+            //Console.ReadLine();
+
+            //File.Delete(path2);
+            //Console.WriteLine("CSharp text2 deleted");
+            //Console.ReadLine();
+
+            //Console.WriteLine("text1 contains {0}", path1);
+            //Console.WriteLine("text1 contains {0}", path2);
+
+        }
+    }
+}
